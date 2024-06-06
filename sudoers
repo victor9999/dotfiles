@@ -1,0 +1,1 @@
+user ALL=(root) NOPASSWD: /usr/bin/virsh start win10, /usr/bin/virsh shutdown win10, /opt/ptt

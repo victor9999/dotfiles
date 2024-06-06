@@ -1,0 +1,1 @@
+GRUB_CMDLINE_LINUX="rhgb quiet amdgpu.ppfeaturemask=0xfffd7fff video=efifb:off amd_iommu=on iommu=pt rd.driver.pre=vfio-pci kvm.ignore_msrs=1 vfio-pci.ids=1002:6610,1002:aab0"

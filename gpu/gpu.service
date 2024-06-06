@@ -1,0 +1,10 @@
+[Unit]
+Description=Increase GPU core and memory clocks
+
+[Service]
+Type=oneshot
+ExecStart=/opt/gpu.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target
