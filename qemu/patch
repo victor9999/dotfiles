@@ -1,0 +1,35 @@
+diff --git a/qemu-8.2.0.patch b/qemu-8.2.0.patch
+index 217b044..140d4f7 100644
+--- a/qemu-8.2.0.patch
++++ b/qemu-8.2.0.patch
+@@ -1,3 +1,8 @@
++From c4c0a7f77de347fcf4989434cea1abe7ee83e171 Mon Sep 17 00:00:00 2001
++From: Test <test@test.com>
++Date: Mon, 17 Sep 2001 00:00:00 +0000
++Subject: [PATCH] test
++
+ diff --git a/block/vhdx.c b/block/vhdx.c
+ index f2c3a80190..b24e96e0c3 100644
+ --- a/block/vhdx.c
+diff --git a/qemu.spec b/qemu.spec
+index a47a938..cf5f0d8 100644
+--- a/qemu.spec
++++ b/qemu.spec
+@@ -366,7 +366,7 @@ Obsoletes: sgabios-bin <= 1:0.20180715git-10.fc38
+ Summary: QEMU is a FAST! processor emulator
+ Name: qemu
+ Version: 8.2.4
+-Release: %{baserelease}%{?rcrel}%{?dist}
++Release: %{baserelease}%{?rcrel}%{?dist}.antidetection
+ Epoch: 2
+ License: Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND FSFAP AND GPL-1.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-2.0-or-later WITH GCC-exception-2.0 AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND MIT AND LicenseRef-Fedora-Public-Domain AND CC-BY-3.0
+ URL: http://www.qemu.org/
+@@ -385,6 +385,8 @@ Patch: qemu-fifreeze-fithaw.patch
+ # included in QEMU 8.2.5
+ Patch: kvm-unit-tests-fix-xsave-flat.patch
+ 
++Patch: qemu-8.2.0.patch
++
+ Source10: qemu-guest-agent.service
+ Source11: 99-qemu-guest-agent.rules
+ Source12: bridge.conf
