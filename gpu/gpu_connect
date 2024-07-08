@@ -1,0 +1,2 @@
+#!/bin/bash
+driverctl --nosave set-override 0000:0f:00.0 amdgpu
