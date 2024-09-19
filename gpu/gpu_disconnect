@@ -1,4 +1,0 @@
-#!/bin/bash
-udevadm trigger --verbose --type=devices --action=remove --subsystem-match=drm --property-match="DEVNAME=/dev/dri/card0" &&
-    sleep 10 &&
-    driverctl --nosave set-override 0000:0f:00.0 vfio-pci
